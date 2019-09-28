@@ -1,0 +1,15 @@
+package com.greetings.sample;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class GreetingController {
+
+	@RequestMapping(value = "/testRestApp", method = RequestMethod.GET)
+	public String testRestApplication() {
+		return "Successfully test REST Application - 1";
+	}
+
+}
